@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Paw Pals</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <!-- Header information -->
+        <header><h1>Find Your Forever Friend</h1></header>
+          <nav> <!-- Start navigation -->
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="page2.html">How To Adopt</a></li>
+              <li><a href="page3.html">Pet Adoption Application Form</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </nav>
+        <div id="form">
+            <main>
+                <h2>Pet Adoption Application Form</h2>
+            <form action="index.html">
+                <fieldset>
+                    <legend>User personal information</legend><br>
+                    <label>Enter your full name</label><br>
+                    <input type="text" name="name"><br><br>
+                    <label>Enter your email</label><br>
+                    <input type="text" name="email"><br><br>
+                    <label>Enter your phone number</label><br>
+                    <input type="text" name="phone"><br><br>
+                    <label>Enter your address</label><br>
+                    <input type="text" name="address"><br>
+                    <br><label>Select your gender</label><br>
+                    <input type="radio" name="gender" value="male"/>Male
+                    <input type="radio" name="gender" value="female"/>Female<br/>
+                </fieldset>
+                <fieldset>
+                    <legend>Other information</legend><br>
+                    <label>Name of pet you wish to adopt</label><br>
+                    <input type="text" name="petname"><br>
+                    <br><label>Do you own any pets?</label><br>
+                    <input type="radio" name="ownpets" value="yes"/>Yes
+                    <input type="radio" name="ownpets" value="no"/>No<br/>
+                    <br><label>Do you own or rent your home?</label><br>
+                    <input type="radio" name="home" value="own"/>Own
+                    <input type="radio" name="home" value="rent"/>Rent<br/><br>
+                    <label>Are there children in the home? (If yes, please list ages)</label><br>
+                    <input type="text" name="children"><br><br>
+                    <label>How many hours per day would the pet be alone?</label><br>
+                    <input type="text" name="hoursalone"><br><br>
+                    <label>If you have to leave town, emergently or planned, where would your pet stay?</label><br>
+                    <textarea rows="10" cols="30"></textarea><br><br>
+                    <label>How would you deal with behavioral issues such as barking, chewing, destructive behavior, bathroom accidents indoors, unruly leash behaviors in your pet?</label><br>
+                    <textarea rows="10" cols="30"></textarea><br>
+                    <br><label>Have you ever been convicted of an animal related crime?</label><br>
+                    <input type="radio" name="animalcrime" value="yes"/>Yes
+                    <input type="radio" name="animalcrime" value="no"/>No<br/><br/>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+            </main>
+        </div>
+    </body>
+</html>

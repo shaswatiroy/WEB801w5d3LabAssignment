@@ -1,0 +1,273 @@
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav li {
+            display: inline; /* Display list items inline */
+            margin-right: 20px; /* Add some space between the list items */
+        }
+        nav a {
+            text-decoration: none; /* Remove underline from links */
+            color: #333; /* Set link color */
+        }
+        nav a:hover {
+            text-decoration: underline; /* Underline link on hover */
+        }
+        body {
+            font-family: Arial, sans-serif; /* Change the font for the entire page */
+            padding: 20px; /* Add some padding around the content */
+            line-height: 1.6; /* Improve line spacing for readability */
+        }
+        h1, h2 {
+            color: #333; /* Dark grey color for headings */
+        }
+        p {
+            margin-bottom: 20px; 
+        }
+        #featured-pets {
+            background-color: #f9f9f9; /* Light grey background for the featured pets section */
+            padding: 20px; 
+            margin-top: 20px; 
+        }
+        #featured-pets img {
+            display: block; /* Ensure the image does not inline */
+            margin: 0 auto 20px; /* Center the image and add space below */
+        }
+        #featured-pets img {
+            display: block; /* Ensure the image does not inline */
+            margin: 0 auto 20px; /* Center the image and add space below */
+        }
+        #featured-pets ul {
+            list-style-type: none; /* Remove list bullets */
+            padding: 0; 
+        } 
+        #upcoming-events {
+            margin-top: 20px; 
+        }
+        #upcoming-events table {
+            width: 100%; /* Make the table take up the full width */
+            border-collapse: collapse; /* Remove gaps between borders */
+        } 
+        #upcoming-events th, #upcoming-events td {
+            text-align: left; 
+            padding: 8px; 
+            border: 1px solid #ddd; /* Light grey border for table cells */
+        }
+        #upcoming-events th {
+            background-color: #f2f2f2; /* Lighter grey background for table headers */
+        }    
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+        }  
+    header h1 {
+        color: #333;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav li {
+        display: inline;
+        margin-right: 20px;
+    }
+    nav a {
+        text-decoration: none;
+        color: #333;
+    }
+    ul{
+        list-style-type: none; /* Remove default list bullets */
+        padding-left: 0; 
+    }
+    div ul#pet-list li:before {
+        content: "→ "; /* Adds an arrow before each list item */
+        color: #007BFF; /* Arrow color */
+    }
+    #form main {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    #form h2 {
+        text-align: center;
+        color: #333;
+    } 
+    fieldset {
+        border: 2px solid #ddd;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 8px;
+    }
+    
+    legend {
+        color: #007BFF;
+        font-weight: bold;
+        padding: 5px 10px;
+        background-color: #f1f1f1;
+        border-radius: 4px;
+    }
+    label {
+        font-weight: bold;
+        display: block; /* Makes the label display as a block, adding some space below each */
+        margin: 10px 0 5px;
+    }
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 20px; /* Adds some space below the input fields */
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    input[type="radio"] {
+        margin-right: 5px;
+    }
+    input[type="submit"] {
+        background-color: #007BFF;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    textarea {
+        resize: vertical; /* Allows vertical resizing of the textarea */
+    }
+
+    /* Gallery */
+    nav ul#gallery_list {
+        list-style-type: none;  
+    }
+    ul#gallery_list {
+        list-style-type: none;  /* Removes default list styling */
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .photo {
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.2s;
+        width: calc(33.333% - 20px);
+        aspect-ratio: 4 / 3;
+    }
+    .photo img {
+        width: 100%;
+        height: 450px;
+        display: block;
+        object-fit: cover;
+    }
+    .photo:hover {
+        transform: scale(1.05);
+    }
+    ul#gallery_list li {
+        text-align: center;
+    }
+
+    .description {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(255, 255, 255, 0.6);
+        color: #111;
+        padding: 5px;
+        transition: display 0.3s ease-in-out;
+    }
+
+    .photo:hover .description {
+        cursor: pointer;
+        display: block; /* Show description when hovering over the image */
+    }
+
+    .info-box {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: #fff;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        text-align: center;
+    }
+
+    #infoCaption {
+        margin-top: 100px;
+    }
+
+    .info-content {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .close-link {
+        color: #e0d042;
+        text-decoration: underline;
+        cursor: pointer;
+        margin-top: 150px;
+        display: block;
+    }
+
+    .lightbox-toggle {
+        color: black;
+    }
+      
+    .backdrop {
+        z-index: 1;
+        opacity: .0;
+        filter: alpha(opacity=0);
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: #000;
+    }
+    .box {
+        position: fixed;
+        opacity: 1;
+        display: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1200px;
+        height: 100%;
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        -moz-box-shadow: 0px 0px 5px #444444;
+        -webkit-box-shadow: 0px 0px 5px #444444;
+        box-shadow: 0px 0px 5px #444444;
+    }
+    
+    * {
+        z-index: 3;
+    }
+    
+    .close {
+        float: right;
+        cursor: pointer;
+    }
+    
+    .box img {
+        width:100%;
+    }
